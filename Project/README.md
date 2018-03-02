@@ -12,7 +12,7 @@ You should also include a README.md in the repo with your scripts.
 This repo explains how all of the scripts work and how they are connected.
 
 One of the most exciting areas in all of data science right now is wearable computing - 
-see for example this ["article"](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/"Title"). 
+see for example this [article](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/ "Title"). 
 
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced 
 algorithms to attract new users. 
