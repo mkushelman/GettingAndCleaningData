@@ -8,7 +8,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 to the local file `Dataset.zip` and unzips it in to `Dataset` subdirectory of the working directory.
 
-> 
+``` 
 pathWD <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- "Dataset.zip"
@@ -20,7 +20,7 @@ b <- paste0("\"", zipFile, "\"")
 parameter <- "x"
 cmd <- paste(a, parameter, b)
 system(cmd)
-
+```
 
 
 
