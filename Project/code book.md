@@ -20,6 +20,7 @@ b <- paste0("\"", zipFile, "\"")
 parameter <- "x"
 cmd <- paste(a, parameter, b)
 system(cmd)
+rm(a,b)
 ```
 
 
