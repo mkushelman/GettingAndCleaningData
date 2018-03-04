@@ -7,7 +7,7 @@ Program `GetData.r` downloads the project data set
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 to the local file `Dataset.zip` and unzips it in to `Dataset` subdirectory of the working directory.
-#### GetData.r
+###### GetData.r
 ``` 
 pathWD <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
