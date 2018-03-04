@@ -1,4 +1,3 @@
-```
 pathWD <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- "Dataset.zip"
@@ -10,4 +9,3 @@ b <- paste0("\"", zipFile, "\"")
 parameter <- "x"
 cmd <- paste(a, parameter, b)
 system(cmd)
-```
