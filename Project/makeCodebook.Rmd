@@ -1,0 +1,57 @@
+---
+title: "codebook"
+author: "Mark Kushelman"
+date: "March 9, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Variable list and descriptions
+------------------------------
+Note 1: below `u` means `mean` or `std`; `U` means `X`,`Y` or `Z`
+
+Note 2: below the magnitude is calculated in the Euclidean norm
+
+Variable name.          | Description
+------------------------|------------
+PERSON_ID               | The range is between 1 and 30.
+ACTIVITY_NAME           | Activity name
+tBodyAcc-u-U            | Feature: The `mean` or `std` time of the 3-dimension _body acceleration_ signals
+tGravityAcc-u-U         | Feature: The `mean` or `std` time of the 3-dimension _gravity acceleration_ signals
+tBodyAccJerk-u-U        | Feature: The `mean` or `std` time of the 3-dimension _body acceleration jerk_ signals
+tBodyGyro-u-U           | Feature: The `mean` or `std` time of the 3-dimension _body gyroscope_ signals 
+tBodyGyroJerk-u-U       | Feature: The `mean` or `std` time of the 3-dimension _body gyroscope jerk_ signals 
+tBodyAccMag-u           | Feature: The `mean` or `std` time of the magnitude of the _body acceleration_ signals
+tGravityAccMag-u        | Feature: The `mean` or `std` time of the magnitude of the _gravity acceleration_ signals
+tBodyAccJerkMag-u       | Feature: The `mean` or `std` time of the magnitude of the _body acceleration jerk_ signals
+tBodyGyroMag-u          | Feature: The `mean` or `std` time of the magnitude of the _body gyroscope_ signals     
+tBodyGyroJerkMag-u      | Feature: The `mean` or `std` time of the magnitude of the _body gyroscope jerk_ signals
+fBodyAcc-u-U            | Feature: The `mean` or `std` frequency of the 3-dimension _body acceleration_ signals
+fBodyAccJerk-u-U        | Feature: The `mean` or `std` frequency of the 3-dimension _body acceleration jerk_ signals
+fBodyGyro-u-U           | Feature: The `mean` or `std` frequency of the 3-dimension _body gyroscope_ signals
+fBodyAccMag-u           | Feature: The `mean` or `std` frequency of the magnitude of the _body acceleration_ signals
+fBodyBodyAccJerkMag-u   | Feature: The `mean` or `std` frequency of the magnitude of the __for me BodyBody does not have sense__ signals
+fBodyBodyGyroMag-u      | Feature: The `mean` or `std` frequency of the magnitude of the __for me BodyBody does not have sense__ signals
+fBodyBodyGyroJerkMag-u  | Feature: The `mean` or `std` frequency of the magnitude of the __for me BodyBody does not have sense__ signals
+featCount               | Feature: Count of data points used to compute `average`
+featAverage             | Feature: Average of each variable for each activity and each subject
+
+
+```{r str}
+str(dt_tidy)
+```
+
+```{r key}
+key(dt_tidy)
+```
+
+```{r}
+dt_tidy
+```
+
+```{r summary}
+summary(dt_tidy)
+```
