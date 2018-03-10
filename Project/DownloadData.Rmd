@@ -1,0 +1,37 @@
+DownloadData
+============
+last updated: `r as.character(Sys.time())`
+
+Program `DownloadData.r` downloads [the project data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+to the local file `Dataset.zip` and unzips it in to the `UCI HAR Dataset` subdirectory of the working directory.
+
+Download the data set
+
+```{r}
+pathWD <- getwd()
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+f <- "Dataset.zip"
+download.file(url, file.path(pathWD, f))
+```
+
+Unzip the dowloaded file
+```{r}
+exeFILE <- file.path("C:", "Program Files", "7-Zip", "7z.exe")
+zipFile <- file.path(pathWD, f)
+a <- paste0("\"", exeFILE, "\"")
+b <- paste0("\"", zipFile, "\"")
+parameter <- "x"
+cmd <- paste(a, parameter, b)
+system(cmd)
+```
+list unzipped files
+```{r}
+DatasetDIR <- file.path(pathWD, "UCI HAR Dataset")
+list.files(DatasetDIR, recursive = TRUE)
+rm(exeFILE, zipFile, a, b , parameter, DatasetDIR)
+```
+
+Next step is `run_analysis`
+
+
+
